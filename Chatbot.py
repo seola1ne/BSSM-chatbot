@@ -32,8 +32,7 @@ model = cached_model()
 df = get_dataset()
 
 st.header('BSSM 입학 안내 및 홍보 챗봇 🐤')
-st.subheader('안녕하세요! 부산소마고 챗봇입니다.')
-st.markdown("[부산소마고 홈페이지 바로가기 🏫](https://school.busanedu.net/bssm-h/main.do)")
+st.subheader('안녕하세요! 무엇이든 물어보세요 :)')
 
 st.sidebar.title("Infomation")
 st.sidebar.info(
@@ -55,7 +54,7 @@ st.sidebar.info(
 tab1, tab2, tab3 = st.tabs(["학교 소개", "입학 안내", "문의"])
 
 with tab1:
-    st.subheader("저희 소마고를 소개합니다")
+    st.subheader("저희 학교를 소개합니다 🧑‍💻")
     st.markdown(
     """
     <div class="infomation">
@@ -84,7 +83,7 @@ with tab2:
     st.markdown("[부산소마고 입학요강 바로가기 📑](https://school.busanedu.net/bssm-h/cm/cntnts/cntntsView.do?mi=1032596&cntntsId=13617)")
 
 with tab3:
-    st.subheader("챗봇에게 무엇이든 물어보세요!")
+    st.subheader("챗봇에게 무엇이든 물어보세요! 🌟")
 
     # 응답
     if 'generated' not in st.session_state:
