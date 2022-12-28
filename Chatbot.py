@@ -73,7 +73,7 @@ with tab1:
     st.markdown("[소마고 길찾기 바로가기 🗺️](https://map.naver.com/v5/directions/-/14349459.146333452,4189553.8356889966,%EB%B6%80%EC%82%B0%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EB%A7%88%EC%9D%B4%EC%8A%A4%ED%84%B0%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90,632131102,PLACE_POI/-/transit?c=14349459.1463332,4189553.8356889,15,0,0,0,dh)")
     
 with tab2:
-    st.subheader("입학 안내")
+    st.subheader("입학 안내 📚")
     st.markdown(
         """
         <img
@@ -83,7 +83,7 @@ with tab2:
     st.markdown("[부산소마고 입학요강 바로가기 📑](https://school.busanedu.net/bssm-h/cm/cntnts/cntntsView.do?mi=1032596&cntntsId=13617)")
 
 with tab3:
-    st.subheader("챗봇에게 무엇이든 물어보세요! 🌟")
+    st.subheader("챗봇에게 무엇이든 물어보세요 🌟")
 
     # 응답
     if 'generated' not in st.session_state:
