@@ -1,6 +1,5 @@
 from numpy import squeeze
 from torch import embedding
-from yaml import unsafe_load_all
 import streamlit as st
 from streamlit_chat import message
 import pandas as pd
@@ -35,14 +34,45 @@ df = get_dataset()
 st.header('BSSM 입학 안내 및 홍보 챗봇 🐤')
 st.subheader('안녕하세요! 부산소마고 챗봇입니다.')
 st.markdown("[부산소마고 홈페이지 바로가기 🏫](https://school.busanedu.net/bssm-h/main.do)")
+
+st.sidebar.title("Infomation")
+st.sidebar.info(
+    """
+    [학교 홈페이지](https://school.busanedu.net/bssm-h/main.do)\n
+    [재학생 홈페이지](https://bssm.kro.kr/)\n
+    [인스타그램](https://www.instargram.com/bssm.hs)\n
+    [페이스북](https://www.facebook.com/BusanSoftwareMeisterHighschool)
+    """
+)
+
+st.sidebar.title("Contact")
+st.sidebar.info(
+    """
+    051-971-2153
+    """
+) 
     
 tab1, tab2, tab3 = st.tabs(["학교 소개", "입학 안내", "문의"])
 
 with tab1:
     st.subheader("저희 소마고를 소개합니다")
+    st.markdown(
+    """
+    <div class="infomation">
+        <p>
+            <span class="category">주소</span> | 부산광역시 강서구 가락대로 1393<br>
+            <span class="category">전화</span> | 051-971-2153<br>
+            <span class="category">설립</span> | 1970년 3월 26일<br>
+            <span class="category">학생</span> | 125명 (남 : 89명, 여 : 36명)<br>
+            <span class="category">교원</span> | 33명 (남 : 13명, 여 : 20명)<br>
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+    st.markdown("[소마고 길찾기 바로가기 🗺️](https://map.naver.com/v5/directions/-/14349459.146333452,4189553.8356889966,%EB%B6%80%EC%82%B0%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EB%A7%88%EC%9D%B4%EC%8A%A4%ED%84%B0%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90,632131102,PLACE_POI/-/transit?c=14349459.1463332,4189553.8356889,15,0,0,0,dh)")
     
 with tab2:
     st.subheader("입학 안내")
+    st.markdown("[부산소마고 입학요강 바로가기 📑](https://school.busanedu.net/bssm-h/cm/cntnts/cntntsView.do?mi=1032596&cntntsId=13617)")
 
 with tab3:
     st.subheader("챗봇에게 무엇이든 물어보세요!")
