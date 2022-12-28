@@ -59,6 +59,9 @@ with tab1:
     st.markdown(
     """
     <div class="infomation">
+        <img
+        class="school-img"
+        src="https://newsimg.sedaily.com/2022/03/15/263FDQYMFA_1.png">
         <p>
             <span class="category">주소</span> | 부산광역시 강서구 가락대로 1393<br>
             <span class="category">전화</span> | 051-971-2153<br>
@@ -72,6 +75,12 @@ with tab1:
     
 with tab2:
     st.subheader("입학 안내")
+    st.markdown(
+        """
+        <img
+            class="school-logo-img"
+            src="https://www.smartsocial.co.kr/public/storage/images/partner/pxuCXVkEs0014wOxpUGtlEdbxp6PPPj9XGRrDMtu.png">
+        """, unsafe_allow_html=True)
     st.markdown("[부산소마고 입학요강 바로가기 📑](https://school.busanedu.net/bssm-h/cm/cntnts/cntntsView.do?mi=1032596&cntntsId=13617)")
 
 with tab3:
